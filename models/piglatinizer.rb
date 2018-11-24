@@ -6,7 +6,6 @@ class PigLatinizer
   end
 
   def piglatinize(text)
-    # is this the best way to do this??
     words = text.split(" ")
     updated_words = []
     words.each do |word|
