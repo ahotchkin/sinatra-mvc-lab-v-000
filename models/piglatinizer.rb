@@ -11,16 +11,19 @@ class PigLatinizer
 
   def piglatinize(text)
     words = text.split(" ")
+    updated_words = []
     words.map do |word|
       if word.length > 1 && word[/([AEIOUaeiou]*)/] == ""
-        word[/([AEIOUaeiou].*)/] + word[/([BCDFGHJKLMNPQRSTVWXYZbcdfghjklmnpqrstvwxyz]*)/] + "ay"
+        new_word = word[/([AEIOUaeiou].*)/] + word[/([BCDFGHJKLMNPQRSTVWXYZbcdfghjklmnpqrstvwxyz]*)/] + "ay"
+        updated_words << new_word
       else
-        word+"way"
+        new_word = word+"way"
+        updated_words << new_word
       end
 
     end
 
-    words.join(" ")
+    updated_words.join(" ")
 
   end
 
