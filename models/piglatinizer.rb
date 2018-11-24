@@ -7,7 +7,7 @@ class PigLatinizer
 
 
 
-  def piglatinize(words)
+  def piglatinize(text)
     # text[/([aeiou].*)/] + text[/([bcdfghjklmnpqrstvwxyz]*)/] + "ay"
     #  text.scan(/[aeoui]/).count
     if text.length > 1 && text[/([AEIOUaeiou]*)/] == ""
