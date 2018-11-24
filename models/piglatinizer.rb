@@ -18,7 +18,7 @@ class PigLatinizer
       end
       piglatinized_words << piglatinized_word
     end
-    updated_words.join(" ")
+    piglatinized_words.join(" ")
   end
 
 
