@@ -5,11 +5,8 @@ class PigLatinizer
     @text = text
   end
 
-  # def split_sentence(text)
-  #   @words = text.split(" ")
-  # end
-
   def piglatinize(text)
+    # is this the best way to do that??
     words = text.split(" ")
     updated_words = []
     words.map do |word|
