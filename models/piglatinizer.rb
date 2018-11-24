@@ -13,10 +13,10 @@ class PigLatinizer
     # text[/([aeiou].*)/] + text[/([bcdfghjklmnpqrstvwxyz]*)/] + "ay"
     #  text.scan(/[aeoui]/).count
     @words.each do |word|
-      if text.length > 1 && text[/([AEIOUaeiou]*)/] == ""
-        text[/([AEIOUaeiou].*)/] + text[/([BCDFGHJKLMNPQRSTVWXYZbcdfghjklmnpqrstvwxyz]*)/] + "ay"
+      if word.length > 1 && word[/([AEIOUaeiou]*)/] == ""
+        word[/([AEIOUaeiou].*)/] + word[/([BCDFGHJKLMNPQRSTVWXYZbcdfghjklmnpqrstvwxyz]*)/] + "ay"
       else
-        text+"way"
+        word+"way"
       end
     end
 
