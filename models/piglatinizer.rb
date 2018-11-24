@@ -9,7 +9,7 @@ class PigLatinizer
     # is this the best way to do this??
     words = text.split(" ")
     updated_words = []
-    words.map do |word|
+    words.each do |word|
       if word.length == 2 && word[/([AEIOUaeiou]*)/] == ""
         new_word = word[/([AEIOUYaeiouy].*)/] + word[/([BCDFGHJKLMNPQRSTVWXZbcdfghjklmnpqrstvwxz]*)/] + "ay"
         updated_words << new_word
