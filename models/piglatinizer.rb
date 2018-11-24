@@ -17,7 +17,6 @@ class PigLatinizer
         new_word = word+"way"
         updated_words << new_word
       end
-
     end
 
     updated_words.join(" ")
