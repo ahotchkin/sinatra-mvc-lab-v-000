@@ -9,7 +9,7 @@ class PigLatinizer
     @words = text.split(" ")
   end
 
-  def piglatinize(words)
+  def piglatinize(text)
     # text[/([aeiou].*)/] + text[/([bcdfghjklmnpqrstvwxyz]*)/] + "ay"
     #  text.scan(/[aeoui]/).count
     @words.each do |word|
