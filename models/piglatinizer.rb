@@ -5,6 +5,10 @@ class PigLatinizer
     @text = text
   end
 
+  def split_sentence
+    @words = text.split(" ")
+  end
+
   def piglatinize(text)
     # text[/([aeiou].*)/] + text[/([bcdfghjklmnpqrstvwxyz]*)/] + "ay"
     #  text.scan(/[aeoui]/).count
@@ -16,7 +20,5 @@ class PigLatinizer
 
   end
 
-  def split_sentence
-    words = text.split(" ")
-  end
+
 end
