@@ -17,10 +17,10 @@ class PigLatinizer
       else
         word+"way"
       end
-      words.join(" ")
+
     end
 
-
+    words.join(" ")
 
   end
 
