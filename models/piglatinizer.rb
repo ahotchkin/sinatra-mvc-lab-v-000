@@ -5,7 +5,9 @@ class PigLatinizer
     @text = text
   end
 
-
+  def split_sentence(text)
+    @words = text.split(" ")
+  end
 
   def piglatinize(text)
     # text[/([aeiou].*)/] + text[/([bcdfghjklmnpqrstvwxyz]*)/] + "ay"
@@ -18,8 +20,6 @@ class PigLatinizer
 
   end
 
-  def split_sentence(text)
-    @words = text.split(" ")
-  end
+
 
 end
