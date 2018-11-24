@@ -14,7 +14,7 @@ class PigLatinizer
       elsif word.length > 1 && word[/([AEIOUaeiou]*)/] == ""
         piglatinized_word = word[/([AEIOUaeiou].*)/] + word[/([BCDFGHJKLMNPQRSTVWXYZbcdfghjklmnpqrstvwxyz]*)/] + "ay"
       else
-        piglatinized_word = word+"way"
+        piglatinized_word = word + "way"
       end
       piglatinized_words << piglatinized_word
     end
